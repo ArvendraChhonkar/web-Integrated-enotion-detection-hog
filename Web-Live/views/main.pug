@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel="stylesheet", href="/main.css")
+  body
+    h1 Upload Image for Emotion Prediction
+    form(action="/upload", method="POST", enctype="multipart/form-data")
+      input(type="file", name="image", accept="image/*", required=true)
+      button(type="submit") Analyze Emotion
